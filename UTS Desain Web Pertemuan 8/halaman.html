@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #5b9bd5;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5b9bd5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #4a8bc2;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <img src="logostikom.jpg" alt="Logo Stikom PGRI Banyuwangi" width="20%">
+    <br>
+<header>
+    <h2>Halaman Login Mahasiswa</h2>
+</header>
+<footer>
+    <form action="submit" name="register" method="post">
+        <label for="Username">Username</label>
+        <br>
+        <input type="text" name="Username" id="Username" readonly>
+        <br>
+        <label for="Password">Password</label>
+        <br>
+        <input type="Password" name="kata-kunci" id="Password" readonly>
+        <br>
+        <a href="halaman masuk.html">
+        <input type="button" value="Masuk">
+        </a>
+        <br>
+        <p>atau</p>
+        <br>
+        <a href="halaman registrasi.html">
+        <input type="button" value="Registrasi">
+        </a>
+        <br>
+    </form>
+</footer>
+</body>
+</html>
