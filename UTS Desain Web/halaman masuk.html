@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="button"] {
+            background-color: #5b9bd5;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #e8491d;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+<body>
+    <img src="logostikom.jpg" alt="Logo Stikom PGRI Banyuwangi" width="20%">
+    <br>
+<header>
+    <h2>Profil Mahasiswa</h2>
+</header>
+    <form>
+        <label for="NIM">NIM :</label>
+        <input type="text" name="number" id="NIM" value="NIM Anda" readonly>
+        <br>
+        <label for="Nama">Nama :</label>
+        <br>
+        <input type="text" name="Nama" id="Nama" value="Nama Anda" readonly>
+        <br>
+        <label for="Angkatan">Angkatan :</label>
+        <br>
+        <input type="text" name="Angkatan" id="Angkatan" value="Angkatan Anda" readonly>
+        <br>
+        <a href="halaman.html">
+        <input type="button" value="Keluar">
+        </a>
+        <br>
+    </form>
+    <script>
+        document.getElementById('keluar').addEventListener('click', function() {
+            const confirmation = confirm("Apakah Anda yakin ingin keluar?");
+            if (confirmation) {
+                window.location.href = "halaman.html"; // Ganti dengan URL halaman yang diinginkan
+            }
+        });
+    </script>
+</body>
+</html>

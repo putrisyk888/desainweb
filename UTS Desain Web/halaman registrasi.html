@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="button"] {
+            background-color: #5b9bd5;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 48%;
+            margin: 5px 1%;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #e8491d;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logostikom.jpg" alt="Logo Stikom PGRI Banyuwangi" width="20%">
+    <br>
+<header>
+    <h2>Halaman Registrasi Mahasiswa</h2>
+</header>
+    <form>
+        <label for="Username">Username</label>
+        <input type="text" name="Username" id="Username" readonly>
+        <br>
+        <label for="Password">Password</label>
+        <input type="password" name="Password" id="Password" readonly>
+        <br>
+        <label for="NIM">NIM</label>
+        <input type="text" name="number" id="NIM" readonly>
+        <br>
+        <label for="NAMA">NAMA</label>
+        <input type="text" name="NAMA" id="NAMA" readonly>
+        <br>
+        <label for="Angkatan">Angkatan</label>
+        <input type="text" name="Angkatan" id="Angkatan" readonly>
+        <br>
+        <div style="text-align: center;">
+        <a href="halaman masuk.html">
+        <input type="button" value="Daftar">
+        </a>
+        <br>
+        <p>atau</p>
+        <br>
+        <a href="halaman.html">
+        <input type="button" value="Kembali">
+        </a>
+        <br>
+        </div>
+    </form>
+</body>
+</html>
