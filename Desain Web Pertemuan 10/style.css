@@ -1,0 +1,81 @@
+.flex-container{
+display: flex;
+justify-content: space-between;
+gap: 10px;
+flex-direction: row;
+}
+
+.flex-container div{
+    background-color: steelblue;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.gallery div{
+    flex: 1 1 calc(25%-10px);
+    height: 100px;
+    background-color: deepskyblue;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    font-family: sans-serif;
+}
+
+.header{
+    flex: 1 100%;
+    background-color: skyblue;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.home{
+    flex: 1 20%;
+    background-color: lightsteelblue;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.content{
+    flex: 2 60%;
+    background-color: cornflowerblue;
+    padding: 20%;
+    height: 100px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sidebar{
+    flex: 1 20%;
+    background-color: skyblue;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.footer{
+    flex: 1 100%;
+    background-color: cadetblue;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
