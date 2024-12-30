@@ -1,0 +1,91 @@
+a{
+    color: white;
+    transition: 1s;
+}
+a:hover{
+    color: darkcyan;
+}
+a.smooth{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em 2em;
+    width: 10em;
+    border-radius: 1.5em;
+    color: #fff;
+    background-color: black;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+a.smooth:hover, a.smooth:focus{
+    background-color: blue;
+}
+table{
+    text-align: center;
+}
+.navbar{
+    background-color: darkred;
+    margin-left: 10px;
+}
+.navbar:hover{
+    background-color: chocolate;
+    transition: 2s;
+    box-shadow: 10px,10px,10px darkviolet;
+    border: 1px dashed;
+}
+.kotak{
+    background: darkseagreen;
+    height: 100px;
+    width: 150px;
+    transition: witdh 2s, height 2s;
+    border-radius: 25px;
+    box-shadow: 10px, 10px, 10px, darkolivegreen;
+}
+.kotak:hover{
+    height: 300px;
+    width: 500px;
+    animation-play-state: running;
+}
+@keyframes warna{
+    0%{background-color: cadetblue;}
+    25%{background-color: steelblue}
+    50%{background-color: slategrey;}
+    75%{background-color: darkcyan;}
+    100%{background-color: darkturquoise}
+}
+.kotak{
+    animation-name: warna;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+img:hover{
+    transform: scale(6)
+    rotate(-10deg)
+    translate(10px,10px)
+    ;
+}
+.rounded{
+    border: 1px red;
+    text-align: center;
+    animation-name: berubah;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+    /* text-shadow: 4px,3px,2px, black; */
+    box-shadow: 2px,3px,2px, black;
+    height: max-content;
+    font-size: 40px;
+}
+.rounded:hover{
+    transform: scale(3);
+}
+@keyframes berubah {
+    0%{background-color: darkkhaki;}
+    50%{background-color: darksalmon;}
+    100%{background-color: darkgrey;}
+}
